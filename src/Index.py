@@ -1,4 +1,4 @@
-# Almost done TODO: Index et index inversé normalisé + bonus 
+# Almost done TODO: Index et index inversé normalisé + bonus
 
 import utils.porter as pt
 import numpy as np
@@ -96,4 +96,4 @@ class IndexerSimple:
         self.inv_index = inv
         self.df = df
         index_file.close()
-        inv_index_file.close
+        inv_index_file.close()
