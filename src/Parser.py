@@ -1,3 +1,5 @@
+# TODO: modifier la méthode build afin de pouvoir extraire d'autres balises
+
 import utils.porter as pt
 import numpy as np
 import TextRepresenter as tr
@@ -8,7 +10,7 @@ import re
 other_balises = {'.I', '.T', '.B', '.A', '.K', '.W', '.X'}
 balise_I = '.I'
 balise_T = '.T'
-  
+
 
 
 class Document:
@@ -23,7 +25,7 @@ class Document:
         return self.text
 
 class Parser:
-    
+
     def __init__(self):
         self.collection = dict()
 
@@ -51,10 +53,10 @@ class Parser:
                             text.append(s[:-1]+" ")
                             s = f.readline()
                     text = ''.join(text)
-                    text = text[:-1]            
+                    text = text[:-1]
                     if len(text) > 0:
                         doc = Document(idoc,text)
-                        self.collection[idoc] = doc 
+                        self.collection[idoc] = doc
                 if not(s.startswith(balise_I)):
                     s = f.readline()
         return out

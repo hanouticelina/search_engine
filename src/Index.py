@@ -1,3 +1,5 @@
+# Almost done TODO: Index et index inversé normalisé + bonus 
+
 import utils.porter as pt
 import numpy as np
 import TextRepresenter as tr
@@ -34,7 +36,7 @@ class IndexerSimple:
 
     def get_tf_idf(self):
         return self.tf_idf
-    
+
     def tf(self,id, w):
         return self.index[id].get(w, 0)
 
@@ -56,7 +58,7 @@ class IndexerSimple:
 
     def getTfsForDoc(self,doc):
         return self.index[doc.get_ind()]
-         
+
     def getTfIDFsForDoc(self,doc):
         out = dict()
 
@@ -66,7 +68,7 @@ class IndexerSimple:
 
     def getTfsForStem(self,stem):
         return self.inv_index[stem]
-    
+
     def getTfIDFsForStem(self,stem):
         return self.tf_idf[stem]
 
@@ -86,8 +88,8 @@ class IndexerSimple:
                     df[word] = 1
                 else:
                     inv[word][i] = ind[i][word]
-                    df[word] += 1 
-                    
+                    df[word] += 1
+
         for word in df.keys():
             inv_index_file.write("{'"+word+"': "+ str(inv[word])+"}\n")
         self.index = ind
@@ -95,5 +97,3 @@ class IndexerSimple:
         self.df = df
         index_file.close()
         inv_index_file.close
-
-   
