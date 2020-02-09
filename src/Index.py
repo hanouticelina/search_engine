@@ -47,8 +47,8 @@ class IndexerSimple:
 
 
     def indexer(self):
-        index_file = open("index.txt", "w")
-        inv_index_file = open("index_inverse.txt", "w")
+        index_file = open("../index_files/index.txt", "w")
+        inv_index_file = open("../index_files/index_inverse.txt", "w")
         index = dict()
         inv_index = dict()
         df = dict()
@@ -78,7 +78,7 @@ class IndexerSimple:
         self.df = df
         index_file.close()
         inv_index_file.close()
-    
+
     def getStrDoc(self,doc):
         return doc.get_text()
 
