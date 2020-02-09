@@ -45,18 +45,21 @@ class Parser:
 
                     idoc = s.split()[1]
                     text = []
-                    s = f.readline()
+                    while(not(s.startswith(balise))):
+                        s = f.readline()
 
                     if (s.startswith(balise)):
                         s = f.readline()
                         while not(s.startswith(".")) and s:
                             text.append(s[:-1]+" ")
                             s = f.readline()
-                    text = ''.join(text)
-                    text = text[:-1]
-                    if len(text) > 0:
-                        doc = Document(idoc,text)
-                        self.collection[idoc] = doc
+                        text = ''.join(text)
+                        text = text[:-1]
+                        if len(text) > 0:
+                            doc = Document(idoc,text)
+                            self.collection[idoc] = doc
+
                 if not(s.startswith(balise_I)):
+                    # print(s)
                     s = f.readline()
         return out
