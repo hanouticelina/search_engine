@@ -78,25 +78,25 @@ class IndexerSimple:
         self.df = df
         index_file.close()
         inv_index_file.close()
+    
+    def getStrDoc(self,doc):
+        return doc.get_text()
 
-        def getStrDoc(self,doc):
-            return doc.get_text()
+    def getTfsForDoc(self,doc):
+        try:
+            return self.index[doc.id]
+        except KeyError:
+            print("le document n'existe pas dans l'index")
+    def getTfIDFsForDoc(self,doc):
+        try:
+            return self.tf_idf[doc.id]
+        except KeyError:
+            print("le document n'existe pas dans l'index")
 
-        def getTfsForDoc(self,doc):
-            try:
-                return self.index[doc.id]
-            except KeyError:
-                print("le document n'existe pas dans l'index")
-        def getTfIDFsForDoc(self,doc):
-            try:
-                return self.tf_idf[doc.id]
-            except KeyError:
-                print("le document n'existe pas dans l'index")
-
-        def getTfsForStem(self,stem):
-            try:
-                return self.inv_index[stem]
-            except KeyError:
-                print()
-        def getTfIDFsForStem(self,stem):
-            return {d: self.tf_idf[d][stem] for d in self.inv_index[stem].keys()}
+    def getTfsForStem(self,stem):
+        try:
+            return self.inv_index[stem]
+        except KeyError:
+            print()
+    def getTfIDFsForStem(self,stem):
+        return {d: self.tf_idf[d][stem] for d in self.inv_index[stem].keys()}
