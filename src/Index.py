@@ -37,6 +37,7 @@ class IndexerSimple:
         return self.df
 
     def get_tf_idf(self):
+
         return self.tf_idf
 
     def idf(self,w):
@@ -100,3 +101,5 @@ class IndexerSimple:
             print()
     def getTfIDFsForStem(self,stem):
         return {d: self.tf_idf[d][stem] for d in self.inv_index[stem].keys()}
+    def get_docs(self):
+        return self.docs
