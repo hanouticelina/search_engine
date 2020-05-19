@@ -24,7 +24,7 @@ Contient les fichiers d'indexation.
 ### src:
 Le sous-repertoire `Indexation` contient les classes relatives à l'indexation et le parsing de la collection de documents. (TME1)
 
-Le sous-repertoire `Appariemment` contient le code des modèles d'appariement. (TME2)
+Le sous-repertoire `Ordonnancement` contient le code des modèles d'appariement. (TME2)
 
 Le sous-repertoire `Evaluation` contient le code des mesures utilisées pour l'évaluation des modèles d'appariement. (TME3) 
 

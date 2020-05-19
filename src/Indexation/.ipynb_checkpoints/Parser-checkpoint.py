@@ -134,7 +134,7 @@ class Parser:
                     
 def buildDocumentCollectionRegex(path):
     """
-    Méthode permettant de lire l’intégralité d’un fichier, sépare les documents en fonction de la balise ”.I” et récupère 
+    Méthode permettant de lire l’int´egralité d’un fichier, sépare les documents en fonction de la balise ”.I” et récupère 
     le contenu des balises ”.I” et ”.T” `a partir d’expressions régulières.
     -----------------------------------------------------
     Args:
