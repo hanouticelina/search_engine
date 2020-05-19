@@ -2,7 +2,7 @@
 import sys
 sys.path.append('./')
 sys.path.append('../')
-from .utils import porter as pt
+from utils import porter as pt
 import numpy as np
 import Indexation.TextRepresenter as tr
 import collections
@@ -48,6 +48,7 @@ class Document:
 class Parser:
     """
     Classe permettant de parser une collection et de la stocker dans un dictionnaire d'objets de type Document.
+     -------------------------------------------------------
     """
     def __init__(self):
         self.collection = dict()
@@ -129,3 +130,24 @@ class Parser:
 
                 if not(s.startswith(balise_I)):
                     s = f.readline()
+
+                    
+def buildDocumentCollectionRegex(path):
+    """
+    Méthode permettant de lire l’int´egralité d’un fichier, sépare les documents en fonction de la balise ”.I” et récupère 
+    le contenu des balises ”.I” et ”.T” `a partir d’expressions régulières.
+    -----------------------------------------------------
+    Args:
+        - path : chemin vers le fichier.
+    """
+    
+    collection = []
+    with open(path) as f:
+        textes = f.read().replace("\n", " ").split(balise_I)
+    for doc in textes[1:]:
+        idoc = re.search("(.*?)(([.][I])|([.][T])|([.][B])|([.][A])|([.][K])|([.][W])|([.][X]))", idoc)
+        texte = re.search("[.][T](.*?)(([.][I])|([.][B])|([.][A])|([.][K])|([.][W])|([.][X]))", doc)
+        idoc = doc[iDoc.start() + 1: idoc.end() - 3]
+        texte = doc[texte.start() + 3: texte.end() - 3]
+        collection.append((idoc, texte))
+    return Parser(collection)
