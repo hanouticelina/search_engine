@@ -1,0 +1,34 @@
+{'preliminari': {'1': 1}}
+{'report-intern': {'1': 1}}
+{'algebra': {'1': 1}}
+{'languag': {'1': 1}}
+{'jgkfldjgfkld': {'1': 1}}
+{'extract': {'2': 1}}
+{'root': {'2': 1}}
+{'repeat': {'2': 1}}
+{'subtract': {'2': 1}}
+{'digit': {'2': 1}}
+{'comput': {'2': 1, '4': 1, '6': 1, '7': 1, '10': 1}}
+{'techniqu': {'3': 1}}
+{'depart': {'3': 1}}
+{'matrix': {'3': 1}}
+{'program': {'3': 1, '8': 1}}
+{'scheme': {'3': 1, '8': 1}}
+{'glossari': {'4': 1, '7': 1, '10': 1}}
+{'engin': {'4': 1, '7': 1, '10': 1}}
+{'programm': {'4': 1, '7': 1, '10': 1, '11': 1}}
+{'terminolog': {'4': 1, '7': 1, '10': 1}}
+{'square-root': {'5': 1}}
+{'approxim': {'5': 1}}
+{'inspect': {'6': 1}}
+{'procedur': {'6': 1}}
+{'equival': {'8': 1}}
+{'transform': {'8': 1}}
+{'propos': {'9': 1, '11': 1}}
+{'uncol': {'9': 1}}
+{'problem': {'11': 1}}
+{'commun': {'11': 1}}
+{'chang': {'11': 1}}
+{'machin': {'11': 1}}
+{'solution-part': {'11': 1}}
+{'2': {'11': 1}}
