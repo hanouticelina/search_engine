@@ -28,14 +28,15 @@ Le sous-repertoire Evaluation contient le code des mesures utilisées pour l'eva
 Les bonus 2.4 (TME2) et 2.6, 2.7 (TME3) ont été traités.
 
 ### tests:
+
 notebooks contenant les tests effectués.
+
 `test_Indexation.ipynb` : Indexation et parsing des documents.
+
 `test_QueryParsing.ipynb` : Parsing des requetes.
+
 `test_Models.ipynb` : Modèles d'appariement et mesures d'evaluation.
-`test_QueryParsing.ipynb` : optimisation des hyper-paramètres du modèle de langue et OkapiBM25
+
+`test_QueryParsing.ipynb` : optimisation des hyper-paramètres du modèle de langue et OkapiBM25.
 
 
-
-```bash
-
-```
