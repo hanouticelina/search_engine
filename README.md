@@ -26,9 +26,9 @@ Le sous-repertoire `Indexation` contient les classes relatives à l'indexation e
 
 Le sous-repertoire `Appariemment` contient le code des modèles d'appariement. (TME2)
 
-Le sous-repertoire `Evaluation` contient le code des mesures utilisées pour l'evaluation des modèles d'appariement. (TME3) 
+Le sous-repertoire `Evaluation` contient le code des mesures utilisées pour l'évaluation des modèles d'appariement. (TME3) 
 
-Les bonus 2.4 (TME2) et 2.6, 2.7 (TME3) ont été traités.
+Les bonus 2.4 (TME2) et 2.6 et 2.7 (TME3) ont été traités.
 
 ### tests:
 
@@ -38,7 +38,7 @@ notebooks contenant les tests effectués.
 
 `test_QueryParsing.ipynb` : Parsing des requetes.
 
-`test_Models.ipynb` : Modèles d'appariement et mesures d'evaluation.
+`test_Models.ipynb` : Modèles d'appariement et mesures d'évaluation.
 
 `test_QueryParsing.ipynb` : optimisation des hyper-paramètres du modèle de langue et OkapiBM25.
 
